@@ -252,7 +252,7 @@ header{
 
 .vetrina{
     color: black;
-    margin-left: 20vw;
+    margin-left: 15vw;
     margin-right: auto;
     margin-top: 25px;
     width: 20vw; 
@@ -263,20 +263,39 @@ header{
 }
 
 
+.container_vetrina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vetrina h1{
+        text-align: center;
+    }
 
-.vetrina h1{
-    text-align: center;
-}
+    .vetrina p{
+        text-align: left;
+    }
+    .vetrina_p{
+        
+    }
 
-.vetrina p{
-    text-align: left;
-}
-.vetrina_p{
-    width: 100%;
-    margin-left:64vw;
-    margin-top: -500px;
-}
+@media(max-width: 1000px){
+    .container_vetrina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vetrina h1{
+        text-align: center;
+    }
 
+    .vetrina p{
+        text-align: left;
+    }
+    .vetrina_p{
+       
+    }
+}
 
 .infa{ 
     color: currentColor;
@@ -285,7 +304,6 @@ header{
     border: 3px ridge gray;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
     transition: 1.5s linear;
 }
 
