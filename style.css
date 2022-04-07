@@ -60,6 +60,23 @@ a:hover{
     transition: .2s linear;
 }
 
+@media(max-width: 1000px){
+    .nav{
+        height: 80px;
+        align-items: center;
+        padding-top: 25px; 
+        font-size: 20px;
+    }
+    .micro{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: .5s linear;
+    }
+}
+
 header{
     padding-top: 400px;
     font-size: 30px;
@@ -95,6 +112,7 @@ header{
   transition: .2s linear;
 } 
 .btn:hover {
+    cursor: pointer;
     transition: .2s linear;
     background-color: #8000FF;
     border: none;
@@ -119,6 +137,10 @@ header{
     margin-right: auto;
     width: 90%;
     transition: .2s linear;
+}
+
+.micro:hover{
+    transition: .5s linear;
 }
 
 .text{
@@ -153,7 +175,13 @@ header{
     transition: .3s linear;
 }
 
+.text p{
+    display: none;
+}
 
+.micro:hover .text p{
+    display: block;
+}
 
 .h1{
     text-decoration: none;
@@ -224,22 +252,87 @@ header{
 
 .vetrina{
     color: black;
-    text-align: center;
-
+    margin-left: 20vw;
     margin-right: auto;
     margin-top: 25px;
     width: 20vw; 
- 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+.vetrina h1{
+    text-align: center;
 }
 
 .vetrina p{
     text-align: left;
 }
 .vetrina_p{
-    margin-left:43vw;
-    width: 20vw;
+    width: 100%;
+    margin-left:64vw;
     margin-top: -500px;
 }
+
+
+.infa{ 
+    color: currentColor;
+    background: linear-gradient(#cff,#3f9);
+    width: 85vw;
+    border: 3px ridge gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    transition: 1.5s linear;
+}
+
+.infa:hover{
+     transition: 1.5s linear;
+    background: linear-gradient(#3f9,#cff);
+}
+
+.infa p{
+    color: black;
+    transition: 1.5s linear;
+}
+
+.infa:hover p{
+    margin-left: 50%;
+    transition: 1.5s linear;
+}
+
+.infa h1{
+    color: black;
+    transition: 1.5s linear;
+}
+
+.infa:hover h1{
+    margin-left: 60%;
+    transition: 1.5s linear;
+}
+
+.img10{
+    margin-top: -60%;
+    transition: 1.5s linear;
+    display: inline;
+    margin-left: 60%;
+}
+
+.infa:hover .img10{
+    transition: 1.5s linear;  
+    text-align: left;
+    margin-left: 0;
+}
+
+svg{
+    margin-top: -10%;
+    width:100%;
+    display: inline;
+}
+
 
 
 /* Footer */
@@ -256,6 +349,7 @@ footer{
     opacity: 0.8;
     background-color: black;
 }
+
 
 
 
