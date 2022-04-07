@@ -143,6 +143,18 @@ header{
     transition: .5s linear;
 }
 
+.micro:hover .img img{
+    width: 450px;
+    height: 450px;
+    transition: .3s linear;
+}
+
+.hover img{
+    width: 450px;
+    height: 450px;
+    transition: .3s linear;
+}
+
 .text{
     text-align: left;
     margin-left: 100px;
@@ -163,10 +175,11 @@ header{
     transition: .3s linear;
 }
 
-.img:hover{
-    width: 450px;
-    height: 450px;
+img{
+    width: 100%;
+    height: 100%;
 }
+
 
 .micro:hover{
     color: darkslategray;
@@ -203,7 +216,6 @@ header{
     border: 1px solid white; 
 }
 
-
 .img_categorii{
     margin-top: 15px;
     width: 300px;
@@ -226,9 +238,8 @@ header{
 /* About */
 
 .about{
-    width: 96vw;
+    width: 99vw;
     background: linear-gradient(to top, #000, #001);
-    border-radius: 30px;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -262,25 +273,39 @@ header{
 }
 
 .vetrina img{
-    width: 100%;
+    width: 500px;
+    height: 500px;
+    margin-left: -150px;
 }
 
 .container_vetrina{
+    margin: 25px auto;
+    width: 20vw;
+    display: flex;
+    gap: 35px;
+}
+
+.vetrina h1{
+    text-align: center;
+}
+
+.vetrina p{
+    text-align: center;
+    
+}
+.vetrina_p{
+    margin: 0 auto;
+    width: 500px;
+}
+
+@media(max-width: 1120px){
+    .container_vetrina{
     margin: 0 auto;
     width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.vetrina h1{
-    text-align: center;
-}
-
-.vetrina p{
-    text-align: left;
-}
-.vetrina_p{
-    margin: 0 auto;
 }
 
 .infa{ 
@@ -342,13 +367,12 @@ svg{
 /* Footer */
 
 footer{
-    margin-top: 25px;
     padding: 10px;
     padding-top: 25px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 99.2vw;
+    width: 100vw;
     height: 70px;
     opacity: 0.8;
     background-color: black;
