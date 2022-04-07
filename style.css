@@ -252,49 +252,35 @@ header{
 
 .vetrina{
     color: black;
-    margin-left: 15vw;
-    margin-right: auto;
     margin-top: 25px;
     width: 20vw; 
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-wrap: nowrap;
 }
 
+.vetrina img{
+    width: 100%;
+}
 
 .container_vetrina{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .vetrina h1{
-        text-align: center;
-    }
+    margin: 0 auto;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vetrina h1{
+    text-align: center;
+}
 
-    .vetrina p{
-        text-align: left;
-    }
-    .vetrina_p{
-        
-    }
-
-@media(max-width: 1000px){
-    .container_vetrina{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .vetrina h1{
-        text-align: center;
-    }
-
-    .vetrina p{
-        text-align: left;
-    }
-    .vetrina_p{
-       
-    }
+.vetrina p{
+    text-align: left;
+}
+.vetrina_p{
+    margin: 0 auto;
 }
 
 .infa{ 
