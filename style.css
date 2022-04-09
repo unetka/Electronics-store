@@ -65,7 +65,7 @@ a:hover{
 
 @media(max-width: 1000px){
     .nav{
-        height: 80px;
+        height: 100px;
         align-items: center;
         padding-top: 25px; 
         font-size: 20px;
@@ -226,6 +226,7 @@ img{
     margin-top: 15px;
     width: 300px;
     height: 300px;
+    margin: 2px;
     margin-left: 15px;
     border-radius: 30px;
     border: 1px solid red;
@@ -234,10 +235,9 @@ img{
 }
 
 .img_categorii:hover{
-    width: 305px;
-    height: 305px;
-    margin-left: 10px;
+    border: 1px solid white;
     transition: .2s linear;
+    background-color: burlywood; 
 }
 
 
@@ -307,13 +307,31 @@ img{
 }
 
 @media(max-width: 1120px){
-    .container_vetrina{
-    margin: 0 auto;
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .nav{
+        height: 90px;
+        align-items: center;
+        padding-top: 25px; 
+        font-size: 20px;
 }
+    .micro{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        align-items: baseline;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: .5s linear;
+}
+    .container_vetrina{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+}
+    .vetrina_p{
+    margin-left: -50px;
+}
+    }
 }
 
 .infa{ 
